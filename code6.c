@@ -1,14 +1,19 @@
 #include <stdio.h>
+int main()
+{
+    int a,b, i, gcd;
 
-int main() {
-    char currentLetter = 'a';
+    printf("Enter two integers \n");
+    scanf("%d %d", &a, &b);
 
-    while (currentLetter <= 'z') {
-        printf("%c ", currentLetter);
-        currentLetter++;
+    for(i=1; i <= a && i <= b; ++i)
+    {
+        if( a % i == 0 && b % i == 0){
+            gcd = i;
+        }
     }
 
-    
+    printf("G.C.D is %d", gcd);
 
     return 0;
 }

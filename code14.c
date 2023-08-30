@@ -1,20 +1,63 @@
 #include <stdio.h>
+int main(){
+	int i ;
+	printf("Number of the month:  ");
+	scanf("%d" ,&i );
+	switch(i)
+	{
+		case 1:
+		printf("Month: January  Days : 31");
+		break;
+		
+		case 2:
+		printf("Month: February  Days : 28");
+		break;
+	
+		case 3:
+		printf("Month: March Days : 31");
+		break;
+		
+		case 4:
+		printf("Month: April Days : 30");
+		break;
+		
+		case 5:
+		printf("Month: May Days : 31");
+		break;
+		
+		case 6:
+		printf("Month: June  Days : 30");
+		break;
+		
+		case 7:
+		printf("Month: July Days : 31");
+		break;
+		
+		case 8:
+		printf("Month: August  Days : 31");
+		break;
+		
+		case 9:
+		printf("Month: September Days : 30");
+		break;
+				
+		case 10:
+		printf("Month: October Days : 31");
+		break;
+		
+		case 11:
+		printf("Month: Novemeber Days : 30");
+		break;
+		
+		case 12:
+		printf("Month: December Days : 31");
+		break;
+		
+		default:
+		printf("Invailed");
+	}
+		
+return 0;
 
-int main() {
-    int number;
-    unsigned long long factorial = 1; 
-
-    printf("Enter a non-negative integer: ");
-    scanf("%d", &number);
-
-    if (number < 0) {
-        printf("Factorial is not defined for negative numbers.\n");
-    } else {
-        for (int i = 1; i <= number; i++) {
-            factorial *= i;
-        }
-        printf("Factorial of %d is: %llu\n", number, factorial);
-    }
-
-    return 0;
-}
+	
+	}

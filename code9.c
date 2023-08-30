@@ -1,23 +1,30 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main() {
-    int number, count = 0;
-
-    printf("Enter a number: ");
-    scanf("%d", &number);
-
-    // Handle the case when the number is 0
-    if (number == 0) {
-        count = 1;
-    } else {
-        while (number != 0) {
-            count++;
-            number /= 10;
+int main()
+{
+    int i,j,n;
+    
+    printf("Enter the number range:  ");
+    scanf("%d",&n);
+    
+    printf("Prime numbers are: \n");   
+   
+    for(i=2;i<=n;i++)
+    {
+        int c=0;
+        for(j=1;j<=i;j++)
+        {
+            if(i%j==0)
+            {
+                c++;
+            }
         }
+         
+       if(c==2)
+        {
+            printf("%d ",i);
+        }
+        else
+        continue;
     }
-
-    printf("Number of digits in the given number is: %d\n", count);
-
-    return 0;
 }
-

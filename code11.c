@@ -1,20 +1,34 @@
-#include <stdio.h>
-
-int main() {
-    int number, sum = 0, digit;
-
-    printf("Enter a number: ");
-    scanf("%d", &number);
-
-    
-    int tempNumber = number;
-    while (tempNumber != 0) {
-        digit = tempNumber % 10;
-        sum += digit;
-        tempNumber /= 10;
-    }
-
-    printf("Sum of digits of %d is: %d\n", number, sum);
-
-    return 0;
+#include<stdio.h>
+int main()
+{
+	int n ,i ,j,c ;
+	printf(" Give a positive integar:  " );
+	scanf("%d" , &n);
+	
+	printf("Prime factors are: ");
+	for( i = 1; i <= n ; ++i)
+	{
+		 	c=0;
+		 
+		if(n%i==0)
+		{
+		   
+		   for( j = 1 ; j <= i ; ++j)
+		   {
+		   
+		   	if( i%j == 0)
+		   	{
+		   	c++ ;
+		   	}
+		   }
+		   if(c==2)
+		   {
+		   	printf("%d ",i);
+		   }
+		   
+		}
+		
+	}
+	
+	return 0;
 }

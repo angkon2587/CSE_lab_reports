@@ -1,17 +1,28 @@
-#include <stdio.h>
-
-int main() {
-    int n, sum = 0;
-
-    printf("Enter a positive integer (n): ");
-    scanf("%d", &n);
-
+#include<stdio.h>
+int main()
+{
+    int j,n;
     
-    for (int i = 1; i <= n; i++) {
-        sum += i;
-    }
-
-    printf("Sum of natural numbers from 1 to %d is: %d\n", n, sum);
-
-    return 0;
+    printf("Enter the a positive integar \n");
+    scanf("%d",&n);
+    
+    int c=0;
+    for(j=1;j<=n;j++)
+        {
+            if(n%j==0)
+            {
+                c++;
+            }
+        }
+            
+    if(c==2)
+        {
+            printf("This is a prime number");
+        }
+    else
+        {
+             printf( "This is not a prime numner");
+        }
+        
+    return 0;  
 }

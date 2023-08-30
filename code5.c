@@ -1,29 +1,25 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main()
 {
-    int n;
-
-    // Input the value of n
-    printf("Enter a natural number (n): ");
-    scanf("%d", &n);
-
-    // Validate input
-    if (n <= 0)
-    {
-        printf("Please enter a positive natural number.\n");
-        return 1;
+    long l,n,rev=0,rem;
+    
+    printf("Enter an integar ");
+    scanf("%lld",&n);
+    
+    l=n;
+    
+    for(n ; n != 0; n /= 10){
+        rem = n % 10;
+        rev = rev * 10 + rem;
+    }
+    
+    if(l != rev){
+    printf("The number is not palindrome");
     }
 
-    // Printing the numbers in reverse using a while loop and n++
-    printf("Natural numbers in reverse from %d to 1:\n", n);
-    while (n >= 1)
-    {
-        printf("%d ", n);
-        n--;
+    else{
+    printf("the number is  palindrome");
     }
-    printf("\n");
-
-    return 0;
+    
+return 0;
 }
-#

@@ -1,16 +1,19 @@
 #include <stdio.h>
 
 int main() {
-    int number = 1;
 
-    while (number <= 100) {
-        if (number % 2 == 0) {
-            printf("%d ", number);
+    int a , b , max ;
+
+    printf("Enter two positive integers:\n");
+    scanf("%d %d", &a, &b);
+    
+    max = ( a > b ) ? a  : b ;
+
+    for( max ; max >= 1 ; max ++) {
+        if (( max % a == 0) && ( max % b == 0)){
+            printf("The LCM is %d." ,max );
+            break;}
         }
-        number++;
-    }
-
-    printf("\n");
-
-    return 0;
+    
+    return  0;
 }

@@ -1,14 +1,12 @@
-#include <stdio.h>
-int main()
+#include<stdio.h>
+void main ()
 {
-int num, count, sum = 0;
-printf("Enter a positive integer: ");
-scanf("%d", &num);
-
-for(count = 1; count <= num; ++count)
+int i;
+for(i = 0; i<10; i++)
 {
-sum += count;
+printf("%d ",i);
+if(i == 6) // loop will end when the condition becomes true
+break;
 }
-printf("Sum = %d", sum);
-return 0;
+printf("came outside of loop i = %d",i);
 }

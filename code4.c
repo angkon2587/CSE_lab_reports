@@ -1,12 +1,20 @@
 #include <stdio.h>
-int main() {
-double number, sum = 0;
-do {
-printf("Enter a number: ");
-scanf("%lf", &number);
-sum += number;
+int main()
+{
+char ch='B';
+switch (ch)
+{
+case 'A':
+printf("CaseA");
+break;
+case 'B':
+printf("CaseB");
+break;
+case 'C':
+printf("CaseC ");
+break;
+default:
+printf("Default ");
 }
-while(number != 0.0);
-printf("Sum = %.2lf",sum);
 return 0;
 }
