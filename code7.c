@@ -1,19 +1,49 @@
-#include <stdio.h>
+#include<stdio.h>
+int main()
+{
+	 int a  , i , b  ;
+	 
+	 for ( a = 1  ; a <= 5 ; a++ )
+	 {
+	 	for (i = 1 ; i <= a ; i ++)
+	 	{
+	 		printf("%d",a);
+	 	}
+	 	printf("\n");
+	 }
+	printf("\n");
 
-int main() {
+	for ( a = 1  ; a <= 5 ; a++ )
+	 {  
+	     b=1;
+	 	for (i = 1 ; i <= a; i ++)
+	 	{
+	 		printf("%d",b);
+	 		b++;
+	 	}
+	 	printf("\n");
+	 }
+	 printf("\n");
+	 
+	for ( a = 5  ; a >=1; a-- )
+	 {
+	 	for (i = 1 ; i <= a ; i++)
+	 	{
+	 		printf("%d",a);
+	 	}
+	 	printf("\n");
+	 }
+	printf("\n");
+	
+	for ( a = 5  ; a >=1; a-- )
+	 {
+	 	for (i = 1 ; i <= a ; i++)
+	 	{
+	 		printf("*");
+	 	}
+	 	printf("\n");
+	 }
+	printf("\n");
 
-    int a , b , max ;
-
-    printf("Enter two positive integers:\n");
-    scanf("%d %d", &a, &b);
-    
-    max = ( a > b ) ? a  : b ;
-
-    for( max ; max >= 1 ; max ++) {
-        if (( max % a == 0) && ( max % b == 0)){
-            printf("The LCM is %d." ,max );
-            break;}
-        }
-    
-    return  0;
+return 0;	
 }

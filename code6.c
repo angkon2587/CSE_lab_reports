@@ -1,19 +1,17 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    int a,b, i, gcd;
-
-    printf("Enter two integers \n");
-    scanf("%d %d", &a, &b);
-
-    for(i=1; i <= a && i <= b; ++i)
-    {
-        if( a % i == 0 && b % i == 0){
-            gcd = i;
-        }
-    }
-
-    printf("G.C.D is %d", gcd);
-
-    return 0;
+	int n ,i , j, sum = 0 ;
+	printf("Value of n = ");
+	scanf("%d" , &n);
+	j = n ;
+	int A[n];
+	printf("Sum of first %d numbers  = " , n);
+	for ( i = 0 ; i < n ; i++ ){
+		A[i]= j ;
+		j --;
+		sum += A[i];
+		}
+		printf("%d" , sum);
+return 0;	
 }

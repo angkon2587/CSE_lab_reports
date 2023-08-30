@@ -1,25 +1,20 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    long l,n,rev=0,rem;
-    
-    printf("Enter an integar ");
-    scanf("%lld",&n);
-    
-    l=n;
-    
-    for(n ; n != 0; n /= 10){
-        rem = n % 10;
-        rev = rev * 10 + rem;
-    }
-    
-    if(l != rev){
-    printf("The number is not palindrome");
-    }
+	int n, i;
+	printf("Number of elements =  ");
+	scanf("%d", &n);
 
-    else{
-    printf("the number is  palindrome");
-    }
-    
-return 0;
+	int A[n];
+	printf("Give %d elements  ", n);
+	for (i = 0; i < n; i++)
+	{
+		scanf("%d", &A[i]);
+	}
+	printf("Reversed array ");
+	for (i = (n - 1); i >= 0; i--)
+	{
+		printf("%d ", A[i]);
+	}
+	return 0;
 }

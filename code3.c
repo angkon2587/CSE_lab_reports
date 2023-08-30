@@ -1,13 +1,20 @@
 #include<stdio.h>
-void main(){
-int i, n=20;
-for(i=1;i<=n;++i){
-if(i % 5 == 0) {
-printf("pass ");
-continue; /*this continue the execution of loop if i % 5
-== 0 */
-
-}
-printf("%d ",i);
-}
+int main()
+{
+	int n , i;
+	printf("Number of elements =  ");
+	scanf("%d" , &n);
+	
+	int A[n];
+    printf("Give %d elements  ", n);
+    for(i =0 ; i < n ; i ++){
+    	scanf("%d", &A[i]);
+    	}
+    printf("Negative  elements ");
+	for(i =0 ; i < n ; i ++) {
+    	if(A[i] < 0 ){
+    		printf ("%d ",  A[i] );
+    	}
+    }
+return 0;	
 }

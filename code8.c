@@ -1,28 +1,25 @@
 #include<stdio.h>
 int main()
 {
-    int j,n;
-    
-    printf("Enter the a positive integar \n");
-    scanf("%d",&n);
-    
-    int c=0;
-    for(j=1;j<=n;j++)
-        {
-            if(n%j==0)
-            {
-                c++;
-            }
-        }
-            
-    if(c==2)
-        {
-            printf("This is a prime number");
-        }
-    else
-        {
-             printf( "This is not a prime numner");
-        }
-        
-    return 0;  
+	int n , i;
+	printf("Number of elements =  ");
+	scanf("%d" , &n);
+	
+	int A[n] , B[n];
+    printf("Give %d elements for First array ", n);
+    for(i =0 ; i < n ; i ++){
+    	scanf("%d", &A[i]);
+    	}
+    printf(" first array ");	
+    for(i =0 ; i < n ; i ++){
+    	printf("%d ", A[i]);
+    	}
+   printf("\n"); 
+   printf(" second array ");
+   for(i =0 ; i < n ; i ++){
+    	B[i] = A[i];
+    	printf("%d ", A[i]);
+    	}
+ 
+return 0;	
 }

@@ -1,12 +1,15 @@
-#include<stdio.h>
-void main ()
-{
-int i;
-for(i = 0; i<10; i++)
-{
-printf("%d ",i);
-if(i == 6) // loop will end when the condition becomes true
-break;
+#include <stdio.h>
+int main() {
+int array[5], i;
+printf("Enter 5 integers: ");
+// taking input and storing it in an array
+for(i = 0; i < 5; ++i) {
+scanf("%d", &array[i]);
 }
-printf("came outside of loop i = %d",i);
+printf("Displaying integers: ");
+// printing elements of an array
+for(i = 0; i < 5; ++i) {
+printf("%d\n", array[i]);
+}
+return 0;
 }

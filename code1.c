@@ -1,13 +1,14 @@
 #include <stdio.h>
-int main() {
-int n, rev = 0, remainder;
-printf("Enter an integer: ");
-scanf("%d", &n);
-while (n != 0) {
-remainder = n % 10;
-rev = rev * 10 + remainder;
-n /= 10;
+int main()
+{
+int a, b;
+for(a = 1; a <= 5; a++)
+{
+for(b = 1; b <= 5; b++)
+{
+printf("%d ", b);
 }
-printf("Reversed number = %d", rev);
+printf("\n");
+}
 return 0;
 }

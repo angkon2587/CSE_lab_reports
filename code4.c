@@ -1,20 +1,25 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-char ch='B';
-switch (ch)
-{
-case 'A':
-printf("CaseA");
-break;
-case 'B':
-printf("CaseB");
-break;
-case 'C':
-printf("CaseC ");
-break;
-default:
-printf("Default ");
-}
-return 0;
+	int n , i , sum_even = 0 , sum_odd = 0;
+	printf("Number of elements =  ");
+	scanf("%d" , &n);
+	
+	int A[n];
+    printf("Give %d positive integars ", n);
+    for(i =0 ; i < n ; i ++){
+    	scanf("%d", &A[i]);
+    	}
+    
+	for(i =0 ; i < n ; i ++) {
+    	if(A[i] % 2 == 0){
+    		sum_even++;
+    	}
+    	else{
+    		sum_odd++;
+    	}
+    }
+    
+    printf(" Total Even numbers = %d\nTotal Odd numbers = %d" , sum_even, sum_odd );
+return 0;	
 }
